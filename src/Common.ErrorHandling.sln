@@ -11,7 +11,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{B461C861-D
 	ProjectSection(SolutionItems) = preProject
 		..\.gitattributes = ..\.gitattributes
 		..\.gitignore = ..\.gitignore
+		..\readme.md = ..\readme.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.ErrorHandling.Tests", "Common.ErrorHandling.Tests\Common.ErrorHandling.Tests.csproj", "{ED9AFF75-9856-4334-B444-97ACDAE120DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.ErrorHandling", "Common.ErrorHandling\Common.ErrorHandling.csproj", "{C5198F9A-13A2-4B1D-B2D4-1F7B904B4B22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +28,14 @@ Global
 		{7549DBA1-0907-46D3-B27F-E228DF659299}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7549DBA1-0907-46D3-B27F-E228DF659299}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7549DBA1-0907-46D3-B27F-E228DF659299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED9AFF75-9856-4334-B444-97ACDAE120DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED9AFF75-9856-4334-B444-97ACDAE120DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED9AFF75-9856-4334-B444-97ACDAE120DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED9AFF75-9856-4334-B444-97ACDAE120DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5198F9A-13A2-4B1D-B2D4-1F7B904B4B22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5198F9A-13A2-4B1D-B2D4-1F7B904B4B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5198F9A-13A2-4B1D-B2D4-1F7B904B4B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5198F9A-13A2-4B1D-B2D4-1F7B904B4B22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
