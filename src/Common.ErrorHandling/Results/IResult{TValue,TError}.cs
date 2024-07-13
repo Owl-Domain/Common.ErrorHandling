@@ -1,4 +1,6 @@
-﻿namespace OwlDomain.Common.Results;
+﻿using OwlDomain.Common.Results.Components;
+
+namespace OwlDomain.Common.Results;
 
 /// <summary>
 ///   Represents a result value, with a possible value of the type <typeparamref name="TValue"/>, 
@@ -6,25 +8,15 @@
 /// </summary>
 /// <typeparam name="TValue">The type of the possible value, can be nullable.</typeparam>
 /// <typeparam name="TError">The type of the possible error, cannot be nullable.</typeparam>
-public interface IResult<TValue, TError> : IResult
+public interface IResult<TValue, TError> : IResult, IValueResult<TValue>, IErrorResult<TError>
    where TError : notnull
 {
    #region Methods
    /// <summary>Checks whether this result is in an okay state.</summary>
    /// <param name="value">The value stored in this result.</param>
-   /// <returns><see langword="true"/> if this result is in an okay state, <see langword="false"/> otherwise.</returns>
-   bool IsOk([MaybeNullWhen(false)] out TValue value);
-
-   /// <summary>Checks whether this result is in an okay state.</summary>
-   /// <param name="value">The value stored in this result.</param>
    /// <param name="error">The error stored in this result.</param>
    /// <returns><see langword="true"/> if this result is in an okay state, <see langword="false"/> otherwise.</returns>
    bool IsOk([MaybeNullWhen(false)] out TValue value, [NotNullWhen(false)] out TError? error);
-
-   /// <summary>Checks whether this result is in an errored state.</summary>
-   /// <param name="error">The error stored in this result.</param>
-   /// <returns><see langword="true"/> if this result is in an errored state, <see langword="false"/> otherwise.</returns>
-   bool IsError([NotNullWhen(true)] out TError? error);
 
    /// <summary>Checks whether this result is in an errored state.</summary>
    /// <param name="error">The error stored in this result.</param>
