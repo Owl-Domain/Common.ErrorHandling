@@ -30,7 +30,7 @@ public interface IResult<TValue, TError> : IResult, IValueResult<TValue>, IError
 ///   Contains useful extension methods related to the <see cref="IResult"/>
 ///   and <see cref="IResult{TValue, TError}"/> interfaces.
 /// </summary>
-public static partial class IResultExtensions
+public static class IResultExtensions
 {
    #region Methods
    /// <summary>
