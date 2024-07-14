@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Project -->
+  <PropertyGroup Label="project">
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
+    <LangVersion>12</LangVersion>
+    <Nullable>enable</Nullable>
+
+    <AssemblyName>OwlDomain.Common.ErrorHandling.TestExtensions</AssemblyName>
+    <RootNamespace>OwlDomain.Common</RootNamespace>
+
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+
+  <!-- Project references -->
+  <ItemGroup Label="projects">
+    <ProjectReference Include="..\..\Common.ErrorHandling\Common.ErrorHandling.csproj" />
+  </ItemGroup>
+
+  <!-- Package references -->
+  <ItemGroup Label="packages">
+    <PackageReference Include="OwlDomain.Testing.Base" Version="1.0.0" />
+  </ItemGroup>
+
+  <!-- Nuget package -->
+  <PropertyGroup Label="nuget">
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <Title>OwlDomain.Common.ErrorHandling.TestExtensions</Title>
+    <Description>A package that contains useful assertions to use in test projects when using result values.</Description>
+    <PackageTags>owldomain, common, error-handling, test-extensions, assertions</PackageTags>
+
+    <Version>1.0.0</Version>
+
+    <Authors>Owl Domain, Nightowl</Authors>
+    <Company>OwlDomain</Company>
+
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/Owl-Domain/Common.ErrorHandling</PackageProjectUrl>
+  </PropertyGroup>
+
+  <!-- Readme -->
+  <ItemGroup Label="readme">
+    <None Include="readme.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <!-- Repository -->
+  <PropertyGroup Label="repository">
+    <RepositoryType>git</RepositoryType>
+    <RepositoryBranch>master</RepositoryBranch>
+    <PackageProjectUrl>https://github.com/Owl-Domain/Common.ErrorHandling</PackageProjectUrl>
+  </PropertyGroup>
+
+</Project>

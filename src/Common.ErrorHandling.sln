@@ -18,6 +18,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.ErrorHandling.Tests"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.ErrorHandling", "Common.ErrorHandling\Common.ErrorHandling.csproj", "{C5198F9A-13A2-4B1D-B2D4-1F7B904B4B22}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "testExtensions", "testExtensions", "{E8C7F799-D0BA-4D1D-B439-C762D85782D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExtensions.Tests", "testExtensions\TestExtensions.Tests\TestExtensions.Tests.csproj", "{7C517019-8CE2-4302-8ABC-60B5EBF5965E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExtensions", "testExtensions\TestExtensions\TestExtensions.csproj", "{4895335A-3264-4593-827F-1FC2D169DA82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,11 +42,21 @@ Global
 		{C5198F9A-13A2-4B1D-B2D4-1F7B904B4B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5198F9A-13A2-4B1D-B2D4-1F7B904B4B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5198F9A-13A2-4B1D-B2D4-1F7B904B4B22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C517019-8CE2-4302-8ABC-60B5EBF5965E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C517019-8CE2-4302-8ABC-60B5EBF5965E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C517019-8CE2-4302-8ABC-60B5EBF5965E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C517019-8CE2-4302-8ABC-60B5EBF5965E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4895335A-3264-4593-827F-1FC2D169DA82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4895335A-3264-4593-827F-1FC2D169DA82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4895335A-3264-4593-827F-1FC2D169DA82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4895335A-3264-4593-827F-1FC2D169DA82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7549DBA1-0907-46D3-B27F-E228DF659299} = {065809C4-6859-40BC-BB7F-84E2754FDCB4}
+		{7C517019-8CE2-4302-8ABC-60B5EBF5965E} = {E8C7F799-D0BA-4D1D-B439-C762D85782D5}
+		{4895335A-3264-4593-827F-1FC2D169DA82} = {E8C7F799-D0BA-4D1D-B439-C762D85782D5}
 	EndGlobalSection
 EndGlobal
