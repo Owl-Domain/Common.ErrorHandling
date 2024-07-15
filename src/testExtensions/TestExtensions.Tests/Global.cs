@@ -1,5 +1,8 @@
-﻿global using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿global using System;
+global using Microsoft.VisualStudio.TestTools.UnitTesting;
+global using Moq;
 global using OwlDomain.Testing.Assertions;
+global using OwlDomain.Testing.Base;
 global using Assert = OwlDomain.Testing.MSTest.Assert;
 
 using System.Diagnostics.CodeAnalysis;

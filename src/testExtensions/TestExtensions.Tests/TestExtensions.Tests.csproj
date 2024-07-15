@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   
   <!-- Project -->
   <PropertyGroup Label="project">
@@ -19,6 +19,7 @@
   <ItemGroup Label="packages">
     <PackageReference Include="OwlDomain.Testing.MSTest" Version="1.0.0" />
     <PackageReference Include="OwlDomain.Testing.Assertions" Version="1.2.0" />
+    <PackageReference Include="Moq" Version="4.20.70" />
 
     <PackageReference Include="coverlet.collector" Version="6.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
