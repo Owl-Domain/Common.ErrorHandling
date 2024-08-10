@@ -1,6 +1,16 @@
 Common.ErrorHandling.TestExtensions
 ===
 
+Contains useful test extensions methods related to the error handling mechanisms provided
+in the `OwlDomain.Common.ErrorHandling` package.
+
+The provided test extensions extend the 
+[OwlDomain.Testing](https://github.com/Owl-Domain/Testing) framework.
+
+
+Relevant namespaces:
+- `OwlDomain.Common.Results`
+
 
 
 ## Contributions
